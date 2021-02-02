@@ -5,6 +5,37 @@ body{
 	font-family:"Comic Sans MS", Sans-serif;
 	font-size:100%;
 	padding:0px 50px;
+    background-color: black;
+}
+figure{
+	text-align:center;
+}
 
+article{
+	background-color: royalblue;
+}
+
+h3{
+    background-color: mediumslateblue;
+}
+
+#prefere {
+    border:5px solid red;
+}
+
+h2{
+    background-color: lightblue;
+    text-align:center;
+    font-size: 175%;
+    }
+
+h1 {
+    text-align:center;
+    font-size: 250%;
+    color: black;
+}
+
+header{
+    background-color: lightskyblue;
 }
 

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body{
+    background-color:lightsalmon; 
+	font-family:"Comic Sans MS", Sans-serif;
+	font-size:100%;
+	margin:0px;
+}
+
+.contenu{
+	max-width:1000px;
+	margin-right:auto; 
+	margin-left:auto;
+}
+
+header, footer{
+	background-color:white;
+	padding:20px;
+}
+
+article {
+	border: 1px solid black;
+	margin: 25px 0px 50px 0px;;
+}
+	
+h2 {
+	background-color:white; 
+	border-radius: 10px;
+}
+h3 {
+	background-color:white; 
+	margin-top:0px;
+}
+
+h2 + ul{ 
+	border: 2px solid black;
+}
+

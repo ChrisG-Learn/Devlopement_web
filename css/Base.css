@@ -7,3 +7,7 @@ body{
 	padding:0px 50px;
     background-color: black;
 }
+
+Header{
+    background-image:url(Images/Night_Header.jpg)
+}

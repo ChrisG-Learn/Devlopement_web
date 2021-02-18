@@ -39,3 +39,13 @@ section div {
 #section2 img, #section2 a {
 	display: block;
 }
+
+#section3 img{
+    float: right;
+}
+
+#section4 p:first-of-type{
+    width: 40%;
+    background-color:white;
+    float: left;
+}

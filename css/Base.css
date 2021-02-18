@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body{
+	margin-top:50px;
+	font-family:"Comic Sans MS", Sans-serif;
+	font-size:100%;
+	padding:0px 50px;
+    background-color: black;
+}

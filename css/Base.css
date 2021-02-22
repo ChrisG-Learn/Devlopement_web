@@ -5,33 +5,37 @@ body{
 	font-family:"Comic Sans MS", Sans-serif;
 	font-size:100%;
 	padding:0px 50px;
-    //background-color: black;
+    background-color: black;
 }
 
-header img{
-	width: auto;
+header{
+	background-image: url("Images/Night_Header.jpg")
 	}
+
+nav {
+    margin : 0 auto;
+    text-align: center;
+}
+
 nav ul{
 	list-style-type: none;
 	margin: 0px;
 	padding: 10px 0px;
-	border-bottom: solid 1px black;
-	border-top: solid 1px black;
-	/*propriété overflow est importante lorsqu'on utilise le float*/
-	overflow: auto; /*ou hidden*/
+	display: inline-block;
+	border-bottom: solid 1px whitesmoke;
+	border-top: solid 1px whitesmoke;
+	overflow: auto;
 }
-/*pour que tous les éléments du menu se placent un à côté de l'autre*/
 nav li {
 	float: left;
 }
-/*enlever les soulignements aux liens hyertextes et ajouter la présentation désirée*/
+
 nav li a {
 	text-decoration: none;
-	color: black;
+	color: whitesmoke;
 	padding: 10px 20px 10px 20px;
 	text-align: center;
 }
-/*mettre en évidence l'élément sur lequel on se place*/
 nav li a:hover {
 	background-color: LightGrey;
 }

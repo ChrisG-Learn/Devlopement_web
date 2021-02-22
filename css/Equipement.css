@@ -1,5 +1,21 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
-h1{
+h1 {
     background-color: darkred;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align:center;
+    width: 700px;
+    margin: auto;
+}
+#headerGun1{
+    position: relative;
+    bottom: 150px;
+    width: 350px;
+}
+#headerGun2{
+    position: relative;
+    bottom: 150px;
+    left: 1100px;
+    width: 350px;
 }

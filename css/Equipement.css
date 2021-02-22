@@ -9,13 +9,15 @@ h1 {
     margin: auto;
 }
 #headerGun1{
-    position: relative;
-    bottom: 150px;
+    float:left;
+/*    position: relative;
+    bottom: 150px;*/
     width: 350px;
 }
 #headerGun2{
-    position: relative;
+    float:right;
+/*    position: relative;
     bottom: 150px;
-    left: 1100px;
+    left: 1100px;*/
     width: 350px;
 }

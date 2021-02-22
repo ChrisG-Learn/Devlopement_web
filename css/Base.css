@@ -9,9 +9,10 @@ body{
 }
 
 header{
-	background-image: url("Images/Night_Header.jpg")
+    text-align: center;
+    color: white;
+}
 
-	}
 
 nav {
     margin : 0 auto;

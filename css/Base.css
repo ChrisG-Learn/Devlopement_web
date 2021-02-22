@@ -8,10 +8,9 @@ body{
     //background-color: black;
 }
 
-Header{
-    background-image:url()
-}
-
+header img{
+	width: auto;
+	}
 nav ul{
 	list-style-type: none;
 	margin: 0px;

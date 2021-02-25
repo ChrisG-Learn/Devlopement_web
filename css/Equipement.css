@@ -8,12 +8,14 @@ h1 {
     width: 700px;
     margin: auto;
 }
-#headerGun1{
-    float:left;
+#headerGun1 {
+
+    float: left;
     width: 350px;
 }
-#headerGun2{
-    float:right;
+#headerGun2 {
+
+    float: right;
     width: 350px;
 }
 h2 {
@@ -44,4 +46,19 @@ p {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
+}
+.Left{
+    border:dashed;
+    border-color:white;
+    float: left;
+    max-width:45%;
+}
+.Right {
+    border: dashed;
+    border-color: white;
+    float: right;
+    max-width: 45%;
+}
+.Clear{
+    clear:both;
 }

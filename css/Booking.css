@@ -8,11 +8,6 @@ Body {
     Background-color: #8FBC8F;
 }
 
-Body h2 {
-    color: #778899;
-    padding-bottom:
-}
-
 .hexagon {
   position: relative;
   width: 300px;
@@ -55,4 +50,11 @@ Body h2 {
   height:173.2051px;
   z-index: 2;
   background: inherit;
+}
+
+.subtitle {
+    font-family: "Lucida Console", Monospace;
+    font-size: 150%;
+    color: #778899;
+    text-align: center;
 }

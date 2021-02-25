@@ -59,8 +59,16 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-.double{
-    column-count:2;
+#linksMask {
+    text-align: center;
+    background-color: aqua;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:20px;
+}
+.double {
+    column-count: 2;
 }
 .Clear{
     clear:both;

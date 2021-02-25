@@ -26,12 +26,12 @@ h2 {
     text-align: center;
     margin: auto;
     margin-top: 100px;
+    margin-bottom:20px;
 }
 h3 {
     text-align: center;
     background-color: mediumblue;
     margin: auto;
-    margin-top: 20px;
     width: 500px;
 }
 #Image {
@@ -40,6 +40,18 @@ h3 {
     margin-right: auto;
     width: 400px;
 }
+#grenade {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 225px;
+}
+#chest {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+}
 p {
     text-align: center;
     background-color: blue;
@@ -47,17 +59,9 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-.Left{
-    border:dashed;
-    border-color:white;
-    float: left;
-    max-width:45%;
-}
-.Right {
-    border: dashed;
-    border-color: white;
-    float: right;
-    max-width: 45%;
+.double{
+
+    column-count:2;
 }
 .Clear{
     clear:both;

@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 header {
        background-color: #87CEFA;
@@ -25,11 +25,11 @@ Body {
 
 footer {
     background-color: black;
+    /*Positionnement ‘fixed’ ou ‘sticky’.*/
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-
 }
 
 .subtitle {

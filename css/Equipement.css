@@ -34,7 +34,7 @@ h3 {
     margin: auto;
     width: 500px;
 }
-#Image {
+#Image0, #Image1, #Image2, #Image3, #Image4, #Image5, #Image6, #Image7, #Image8, #Image9 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,13 +59,16 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-#linksMask {
+#linksMask1 {
     text-align: center;
     background-color: aqua;
     width: 600px;
     margin-right: auto;
     margin-left: auto;
-    margin-top:20px;
+    margin-top: 20px;
+}
+div{
+    margin-bottom: 20px;
 }
 .double {
     column-count: 2;

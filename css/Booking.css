@@ -6,84 +6,40 @@ header {
 
 Body {
     Background-color: #8FBC8F;
+    color: white;
+    text-align: center;
+
 }
 
-#grid {
-    position: relative;
-    width: 60%;
-    margin: 0 auto;
-    padding: 0; /* Clears unordered list default of 40px */
+.price
+{
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
+.price div
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#grid li .hexagon {
-    position: absolute;
-    top: 0;
+footer {
+    background-color: black;
+    position: fixed;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background: #F08080;
-    -o-transform: skewY(-30deg) rotate(60deg);
-    -moz-transform: skewY(-30deg) rotate(60deg);
-    -webkit-transform: skewY(-30deg) rotate(60deg);
-    -ms-transform: skewY(-30deg) rotate(60deg);
-    transform: skewY(-30deg) rotate(60deg);
-    overflow: hidden;
-}
 
-#grid li * {
-    visibility: visible;
 }
-
-#grid li {
-    list-style-type: none;
-    position: relative;
-    float: left;
-    width: 27.85714285714286%;
-    padding: 0 0 32.16760145166612% 0;
-    -o-transform: rotate(-60deg) skewY(30deg);
-    -moz-transform: rotate(-60deg) skewY(30deg);
-    -webkit-transform: rotate(-60deg) skewY(30deg);
-    -ms-transform: rotate(-60deg) skewY(30deg);
-    transform: rotate(-60deg) skewY(30deg);
-    overflow: hidden;
-    visibility: hidden;
-}
-
-#grid li:nth-child(2) {
-  margin: 0 1%;
-}
-
-#grid li:nth-child(3n+2) {
-  margin: 0 1%;
-}
-
-#grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
-    margin-top: -6.9285714285%;
-    margin-bottom: -6.9285714285%;
-    -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
-    -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
-    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
-    -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
-    transform: translateX(50%) rotate(-60deg) skewY(30deg);
-}
-
 
 .subtitle {
     font-family: "Lucida Console", Monospace;
     font-size: 150%;
     color: #778899;
-    text-align: center;
 }
 
 .subtitle2 {
     font-family: "Lucida Console", Monospace;
     font-size: 150%;
     color: #696969;
-    text-align: center;
 }

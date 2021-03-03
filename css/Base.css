@@ -4,13 +4,15 @@ body{
 	margin-top:50px;
 	font-family:"Comic Sans MS", Sans-serif;
 	font-size:100%;
-	padding:0px 50px;
+	padding: center;
     background-color: #708090;
+    text-align: center;
 }
 
 header{
     text-align: center;
     color: white;
+    background-color: black;
 }
 
 
@@ -40,4 +42,18 @@ nav li a {
 }
 nav li a:hover {
 	background-color: LightGrey;
+}
+
+.Home {
+    background-image: url('https://www.paintballmirabel.com/images/terrains/normandie/1920/normandie-paintball-field-paintball-canada-paintball-mirabel-6.jpg')
+
+}
+
+body div {
+    background: #AAB7B8;
+}
+
+ul.a {
+  list-style-type: circle;
+  text-align: left;
 }

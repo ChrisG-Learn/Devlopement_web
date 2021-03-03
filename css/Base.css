@@ -12,7 +12,7 @@ body{
 header{
     text-align: center;
     color: white;
-    background-color: black;
+
 }
 
 
@@ -42,11 +42,6 @@ nav li a {
 }
 nav li a:hover {
 	background-color: LightGrey;
-}
-
-.Home {
-    background-image: url('https://www.paintballmirabel.com/images/terrains/normandie/1920/normandie-paintball-field-paintball-canada-paintball-mirabel-6.jpg')
-
 }
 
 body div {

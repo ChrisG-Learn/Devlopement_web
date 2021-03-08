@@ -1,0 +1,23 @@
+body
+{
+	max-width:1000px;
+	margin:auto;
+}
+header, footer {
+	background-color: deepskyblue;
+}
+h2 {
+	background-color:deepskyblue;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: lightcyan;
+	overflow: hidden;
+}
+nav li {
+	float:left;
+	padding:10px 20px;
+}
+

@@ -8,4 +8,17 @@ header {
 }
 article {
 	border:solid blue;
+	margin-top: 10px;
+}
+
+article h2 {
+	color: red;
+}
+
+#a1 footer {
+	color: red;
+}
+
+#a2 footer {
+	color: red;
 }

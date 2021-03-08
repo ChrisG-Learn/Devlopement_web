@@ -6,8 +6,19 @@ body
 header, footer {
 	background-color: deepskyblue;
 }
+header h1{
+	vertical-align: center;
+}
 h2 {
 	background-color:deepskyblue;
+}
+img {
+	position: relative;
+	float 
+}
+article img {
+	float:left;
+	width: inherit;
 }
 nav ul {
 	list-style-type: none;

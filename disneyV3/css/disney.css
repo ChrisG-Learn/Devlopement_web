@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+body{
+    background-color: #DD4132; /*Fiesta; */
+	margin-top:20px;
+	font-family:"Comic Sans MS", Sans-serif;
+	font-size:100%;
+}
+main{
+	max-width:1000px;
+	margin-right:auto; 
+	margin-left:auto; 
+}
+header, footer{
+	background-color:white;
+}
+header{
+	border-radius:10px;
+}
+header div img{
+    width:60%;
+    height:auto;
+}
+footer{
+	 min-height: 25px;
+}
+h1
+{
+	font-size:3vw;
+	text-align:center;
+	border-radius:10px;
+	background-color:white; 
+} 
+h2{
+	font-size:2vw;
+	text-align:center;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom:0px;
+}
+h3
+{
+	font-size:1.5vw;
+	background-color:white; 
+ 	padding:20px;
+	margin-top:0px;
+	margin-bottom:0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.centre {
+	text-align:center;
+}
+article{
+	width:70%;
+	margin:auto;
+}
+.contenu_article{
+	background-color: #FE840E; 
+	border-bottom-left-radius: 10px;	
+	border-bottom-right-radius: 10px;	
+	margin-bottom:25px;
+	padding: 0px 20px;
+	overflow:hidden;
+}
+.contenu_article p:nth-of-type(1) {
+	padding-top:20px;
+	margin-top:0px;
+}
+.contenu_article p:nth-of-type(1)::first-letter{
+	font-size:200%;
+}
+.contenu_article p:last-child {
+	padding-bottom:20px;
+}
+.contenu_article img {
+	float: right; 
+	padding: 20px;
+}
+
+/* Menu */ 
+nav ul{
+	list-style-type: none;
+	margin: 0px 0px 20px 0px;
+	padding: 10px 0px 10px 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:white;
+	overflow:hidden;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px 5px 20px;
+	font-size:1.25em;
+}
+nav li a:hover {
+	text-decoration: underline;
+}
+
+.page_histoire {
+	background-image: url("../images/fond.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    nav li {
+        text-align: center;
+        float:none;
+    }
+    h1,h2,h3 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article{
+        width: 100%;
+    }
+    header div img{
+        display: none;
+    }
+    .contenu_article img {
+	float: none;
+	display:block;
+	margin: auto;
+	margin-bottom: 1px;
+    }
+}

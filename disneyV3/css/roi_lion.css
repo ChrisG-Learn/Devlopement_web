@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+header img {
+	width:initial; /*annule le 60% de disney.css*/
+	display:block;
+	margin: auto;
+}
+section h2 {
+	margin-bottom: 20px;
+}
+section div {
+	width:50%;
+	padding: 10px;
+	text-align: center;
+}
+/*évite que l'image sorte de sa division*/
+section div img {
+	max-width:100%;
+	height: auto;
+}
+section div:first-of-type{
+	float:left;
+	border-right: solid black 1px;
+}
+section div:nth-of-type(2) {
+	float:right;
+	font-size:150%;
+}
+.clear {
+	clear:both;
+}
+footer {
+	margin-top:20px;
+}
+

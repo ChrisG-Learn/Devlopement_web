@@ -24,19 +24,34 @@ function InitialiserEvenements()
 //exercice 1
 function AfficherQuestion()
 {
+    document.getElementById("texteQuestion").style.display = "block";
+    document.getElementById("reponse").style.display = "block";
 }
 function DemanderReponse()
 {
+    var person = prompt("Please enter the answer", "");
+
+    if (person == "Le veau") {
+      txt = "Bravo";
+      document.getElementById("message").style.color = "black";
+      document.getElementById("message").style.fontWeight = 'bold';
+      document.getElementById("message").textContent = txt;
+    } else {
+      txt = "Mauvaise réponse";
+      document.getElementById("message").style.color = "red";
+      document.getElementById("message").style.fontWeight = 'none';
+      document.getElementById("message").textContent = txt;
+    }
 }
 
 //exerccie 2
 function GrossirTexte()
 {
-
+    document.this.fontSize = "200%";
 }
 function RapetisserTexte()
 {
-	
+	document.this.fontSize = "100%";
 }
 
 //exercice 3 

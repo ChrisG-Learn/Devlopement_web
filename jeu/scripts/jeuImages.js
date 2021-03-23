@@ -13,9 +13,9 @@ var timer;
 
 function Initialiser()
 {
-	document.getElementById("btnFacile").addEventListener("click", GenererJeu);
-	document.getElementById("btnMoyen").addEventListener("click", GenererJeu);
-	document.getElementById("btnDifficile").addEventListener("click", GenererJeu);
+	document.getElementById("btnFacile").addEventListener("click", GenererJeu(1));
+	document.getElementById("btnMoyen").addEventListener("click", GenererJeu(2));
+	document.getElementById("btnDifficile").addEventListener("click", GenererJeu(3));
 	var lesImages = document.getElementsByClassName("image");
 	for (var cpt=0; cpt<lesImages.length; cpt++)
 	{
@@ -40,10 +40,26 @@ function CreerLien()
 	}
 }
 
-function GenererJeu()
+function GenererJeu(dif)
 {
 	//ajoutez le code pour déterminer le niveau ici
 
+	if(dif=1)
+	{
+		nombreImages = 5;
+	}
+	else if(dif=2)
+	{
+		nombreImages = 10;
+	}
+	else if(dif=3)
+	{
+		nombreImages = 15;
+	}
+	else
+	{
+		nombreImages = 5;
+	}
 
 
 

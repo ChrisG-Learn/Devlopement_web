@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+
+body {
+    background-image: url('https://www.paintballmirabel.com/images/terrains/crash/1920/crash-outdoor-paintball-field-canada-paintball-mirabel-2.jpg')
+}
+
+h1{
+    text-align:center;
+    color: black;
+}
+
+nav ul{
+    border-bottom: solid 1px black;
+	border-top: solid 1px black;
+}
+
+nav li a {
+    color: black;
+}
+
+#information {
+    column-count: 2;
+    text-align:center;
+    margin-top:50px;
+}
+
+div {
+    margin-top: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(51, 204, 255, 0.5);
+    width: 600px;
+}
+
+#map{
+    padding:5px;
+    background-color:black;
+}
+
+
+

@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+
+header {
+       background-color: #87CEFA;
+}
+
+Body {
+    Background-color: #8FBC8F;
+    color: white;
+    text-align: center;
+
+}
+
+.price
+{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.price div
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: black;
+    /*Positionnement ‘fixed’ ou ‘sticky’.*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.subtitle {
+    font-family: "Lucida Console", Monospace;
+    font-size: 150%;
+    color: #778899;
+}
+
+.subtitle2 {
+    font-family: "Lucida Console", Monospace;
+    font-size: 150%;
+    color: #696969;
+}

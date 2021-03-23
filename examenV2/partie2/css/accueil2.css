@@ -1,0 +1,34 @@
+body
+{
+	max-width:1000px;
+	margin:auto;
+}
+header, footer {
+	background-color: deepskyblue;
+}
+header h1{
+	vertical-align: center;
+}
+h2 {
+	background-color:deepskyblue;
+}
+img {
+	position: relative;
+	float 
+}
+article img {
+	float:left;
+	width: inherit;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: lightcyan;
+	overflow: hidden;
+}
+nav li {
+	float:left;
+	padding:10px 20px;
+}
+

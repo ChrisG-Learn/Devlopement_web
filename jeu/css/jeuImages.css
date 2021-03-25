@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+body{
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header, footer {
+	background-color: gray;
+	color: white;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+h1, h2 {
+	text-align:center;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+.contenu{
+	max-width: 992px;
+	margin:auto;
+}
+.contenu p {
+	text-align: center;
+}
+
+button {
+	 float:left;
+	 padding:15px;
+	 background-color: black;
+	 color:white;
+	 margin:20px;
+	 font-size:1.1em;
+	 border-radius: 10px;
+ }
+
+ #informations {
+	background-color: gray;
+	overflow:hidden;
+	font-weight: bold;
+	color:black;
+	font-size:1em;
+	text-align: center;
+ }
+ #infoTour p {
+	padding:10px;
+	margin:10px;
+	width: 30%;
+	float: left;	
+ }
+ #informations p span {
+	 font-size: 1.2em;
+ }
+ .clear {
+	 clear:both;
+ }
+.image, #imageATrouver {
+	padding:10px;
+	border: solid 2px black;
+	margin: 25px;
+}

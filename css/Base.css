@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body{
+	margin-top:50px;
+	font-family:"Comic Sans MS", Sans-serif;
+	font-size:100%;
+	padding:0px 50px;
+    background-color: #708090;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+
+nav {
+    margin : 0 auto;
+    text-align: center;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px 0px;
+	display: inline-block;
+	border-bottom: solid 1px whitesmoke;
+	border-top: solid 1px whitesmoke;
+	overflow: auto;
+}
+nav li {
+	float: left;
+}
+
+nav li a {
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+}
+nav li a:hover {
+	background-color: LightGrey;
+}

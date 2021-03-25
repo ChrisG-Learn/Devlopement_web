@@ -74,6 +74,8 @@ function GenererJeu(dif)
 function GenererImageATrouver()
 {
 	var hasard;
+	var str1 = "emoji";
+	var str2 = ".png"
 	if (nombreImages == 5)
 	{
 		hasard = math.floor((Math.random() * 5) + 1);
@@ -86,7 +88,8 @@ function GenererImageATrouver()
 	{
 		hasard = math.floor((math.random() * 15) + 1);
 	}
-
+	var image = string.concat(str1, hasard, str2);
+	document.getElementById(imageATrouver).src = image;
 }
 
 function GenererLesImages()

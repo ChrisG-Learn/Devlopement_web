@@ -47,6 +47,7 @@ function GenererJeu(dif)
 	if(dif=1)
 	{
 		nombreImages = 5;
+		document.querySelector('')
 	}
 	else if(dif=2)
 	{
@@ -72,6 +73,19 @@ function GenererJeu(dif)
 
 function GenererImageATrouver()
 {
+	var hasard;
+	if (nombreImages == 5)
+	{
+		hasard = math.floor((Math.random() * 5) + 1);
+	}
+	else if (nombreImages == 10)
+	{
+		hasard = math.floor((math.random() * 10) + 1);
+	}
+	else if (nombreImages == 15)
+	{
+		hasard = math.floor((math.random() * 15) + 1);
+	}
 
 }
 

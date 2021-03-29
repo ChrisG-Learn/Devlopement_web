@@ -78,23 +78,56 @@ function GenererImageATrouver()
 	var str2 = ".png"
 	if (nombreImages == 5)
 	{
-		hasard = math.floor((Math.random() * 5) + 1);
+		hasard = Math.floor((Math.random() * 5) + 1);
 	}
 	else if (nombreImages == 10)
 	{
-		hasard = math.floor((math.random() * 10) + 1);
+		hasard = Math.floor((math.random() * 10) + 1);
 	}
 	else if (nombreImages == 15)
 	{
-		hasard = math.floor((math.random() * 15) + 1);
+		hasard = Math.floor((math.random() * 15) + 1);
 	}
 	var image = string.concat(str1, hasard, str2);
-	document.getElementById(imageATrouver).src = image;
+	document.getElementById("imageATrouver").src = image;
 }
 
 function GenererLesImages()
 {
+	var hasard;
+	var countImage = nombreImages;
+	var lesImages = document.getElementsByClassName("image");
+	if (nombreImages == 5)
+	{
+		for (var countImage = 0; countImage < 5; countImage++)
+		{
+			var image1 = "images/emoji";
+			image1 = image1.concat(hasard);
+			image1 = image1.concat(".png");
+			lesImages[countImage].src = image1;
+		}
+	}
+	else if (nombreImages == 10)
+	{
 
+		for (var countImage = 0; countImage < 10; countImage++)
+		{
+			var image1 = "images/emoji";
+			image1 = image1.concat(hasard);
+			image1 = image1.concat(".png");
+			lesImages[countImage].src = image1;
+		}
+	}
+	else if (nombreImages == 15)
+	{
+		for (var countImage = 0; countImage < 15; countImage++)
+		{
+			var image1 = "images/emoji";
+			image1 = image1.concat(hasard);
+			image1 = image1.concat(".png");
+			lesImages[countImage].src = image1;
+		}
+	}
 }
 
 function VerifierImage() 

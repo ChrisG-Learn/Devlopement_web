@@ -95,7 +95,7 @@ function GenererImageATrouver()
 function GenererLesImages()
 {
 	var hasard;
-	var countImage = nombreImages;
+
 	var lesImages = document.getElementsByClassName("image");
 	if (nombreImages == 5)
 	{
@@ -128,6 +128,9 @@ function GenererLesImages()
 			lesImages[countImage].src = image1;
 		}
 	}
+    for (var countSup = nombreImages + 1; i < length; i++) {
+		lesImages[countImage].display = "none";
+    }
 }
 
 function VerifierImage() 

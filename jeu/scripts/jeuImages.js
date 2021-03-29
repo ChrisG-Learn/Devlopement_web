@@ -128,7 +128,7 @@ function GenererLesImages()
 			lesImages[countImage].src = image1;
 		}
 	}
-    for (var countSup = nombreImages + 1; i < length; i++) {
+	for (var countSup = nombreImages + 1; countSup < lesImages.length; countSup++) {
 		lesImages[countImage].display = "none";
     }
 }

@@ -149,7 +149,9 @@ function VerifierToutesTrouvees()
 	{
 		clearInterval(timer);
 		ApparaitreNiveaux();
+		tours++;
 	}
+
 }
 	
 function DisparaitreNiveaux()

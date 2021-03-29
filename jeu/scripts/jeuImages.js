@@ -47,7 +47,7 @@ function GenererJeu(dif)
 	if(dif=1)
 	{
 		nombreImages = 5;
-		document.querySelector('')
+
 	}
 	else if(dif=2)
 	{

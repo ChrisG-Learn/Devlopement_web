@@ -44,16 +44,16 @@ function GenererJeu(dif)
 {
 	//ajoutez le code pour déterminer le niveau ici
 
-	if(dif=1)
+	if(dif==1)
 	{
 		nombreImages = 5;
 
 	}
-	else if(dif=2)
+	else if(dif==2)
 	{
 		nombreImages = 10;
 	}
-	else if(dif=3)
+	else if(dif==3)
 	{
 		nombreImages = 15;
 	}
@@ -64,7 +64,7 @@ function GenererJeu(dif)
 
 
 
-	DisparaitreNiveaux();
+	//DisparaitreNiveaux();
 	GenererImageATrouver();
 	GenererLesImages();
 	DebuterChronometre();
@@ -74,21 +74,21 @@ function GenererJeu(dif)
 function GenererImageATrouver()
 {
 	var hasard;
-	var str1 = "emoji";
-	var str2 = ".png"
 	if (nombreImages == 5)
 	{
 		hasard = Math.floor((Math.random() * 5) + 1);
 	}
 	else if (nombreImages == 10)
 	{
-		hasard = Math.floor((math.random() * 10) + 1);
+		hasard = Math.floor((Math.random() * 10) + 1);
 	}
 	else if (nombreImages == 15)
 	{
-		hasard = Math.floor((math.random() * 15) + 1);
+		hasard = Math.floor((Math.random() * 15) + 1);
 	}
-	var image = string.concat(str1, hasard, str2);
+	var image = "images/emoji";
+	image = image.concat(hasard);
+	image = image.concat(".png");
 	document.getElementById("imageATrouver").src = image;
 }
 

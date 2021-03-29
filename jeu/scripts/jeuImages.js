@@ -129,7 +129,7 @@ function GenererLesImages()
 		}
 	}
 	for (var countSup = nombreImages + 1; countSup < lesImages.length; countSup++) {
-		lesImages[countImage].display = "none";
+		lesImages[countSup].style.display = "none";
     }
 }
 

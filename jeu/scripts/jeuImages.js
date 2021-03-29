@@ -13,9 +13,9 @@ var timer;
 
 function Initialiser()
 {
-	document.getElementById("btnFacile").addEventListener("click", GenererJeu(1));
-	document.getElementById("btnMoyen").addEventListener("click", GenererJeu(2));
-	document.getElementById("btnDifficile").addEventListener("click", GenererJeu(3));
+	document.getElementById("btnFacile").addEventListener("click", GenererJeu());
+	document.getElementById("btnMoyen").addEventListener("click", GenererJeu());
+	document.getElementById("btnDifficile").addEventListener("click", GenererJeu());
 	var lesImages = document.getElementsByClassName("image");
 	for (var cpt=0; cpt<lesImages.length; cpt++)
 	{

@@ -151,6 +151,7 @@ function ClickImage()
 function VerifierImage() 
 {
 
+	ClickImage();
 	VerifierToutesTrouvees();
 }
 

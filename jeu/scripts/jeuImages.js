@@ -161,18 +161,20 @@ function VerifierImage()
 function VerifierToutesTrouvees()
 {
 	var imagesRestantes = 0;
+	for (var count = 0; count < lesImages.length; count++) {
+		if (this.getAttribute.src == image && lesImages[cpt].style.borderColor == "black")
+		{
+		imagesRestantes = imagesRestantes + 1;
+		}
 
-    /*for (var count = 0; count < lesImages.length; count++) {
-
-    }
-
+	}
 
 	if (imagesRestantes == 0)
 	{
 		clearInterval(timer);
 		ApparaitreNiveaux();
 		tours++;
-	}*/
+	}
 
 }
 	

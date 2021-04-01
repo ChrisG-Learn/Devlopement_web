@@ -1,5 +1,5 @@
 
-window.onload = Initialiser;
+window.onload = Initialiser();
 
 //nombre d'images différentes à utiliser dans le jeu 
 var nombreImages = 0;
@@ -13,9 +13,9 @@ var timer;
 
 function Initialiser()
 {
-	document.getElementById("btnFacile").addEventListener("click", GenererJeu());
-	document.getElementById("btnMoyen").addEventListener("click", GenererJeu());
-	document.getElementById("btnDifficile").addEventListener("click", GenererJeu());
+	document.getElementById("btnFacile").addEventListener("click", GenererJeu(1));
+	document.getElementById("btnMoyen").addEventListener("click", GenererJeu(2));
+	document.getElementById("btnDifficile").addEventListener("click", GenererJeu(3));
 	var lesImages = document.getElementsByClassName("image");
 	for (var cpt=0; cpt<lesImages.length; cpt++)
 	{
@@ -95,11 +95,12 @@ function GenererImageATrouver()
 function GenererLesImages()
 {
 	var hasard;
-
+    var nbrImageSup;
 	var lesImages = document.getElementsByClassName("image");
 	if (nombreImages == 5)
 	{
-		for (var countImage = 0; countImage < 5; countImage++)
+	    nbrImageSup = 10;
+		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
@@ -109,8 +110,8 @@ function GenererLesImages()
 	}
 	else if (nombreImages == 10)
 	{
-
-		for (var countImage = 0; countImage < 10; countImage++)
+        nbrImageSup = 20;
+		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
@@ -120,7 +121,8 @@ function GenererLesImages()
 	}
 	else if (nombreImages == 15)
 	{
-		for (var countImage = 0; countImage < 15; countImage++)
+	    nbrImageSup = 30;
+		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
@@ -128,7 +130,7 @@ function GenererLesImages()
 			lesImages[countImage].src = image1;
 		}
 	}
-	for (var countSup = nombreImages + 1; countSup < lesImages.length; countSup++) {
+	for (var countSup = nombreImages; countSup < lesImages.length; countSup++) {
 		lesImages[countSup].style.display = "none";
     }
 }

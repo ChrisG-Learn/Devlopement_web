@@ -1,5 +1,5 @@
 
-window.onload = Initialiser();
+window.onload = Initialiser;
 
 //nombre d'images différentes à utiliser dans le jeu 
 var nombreImages = 0;
@@ -13,9 +13,9 @@ var timer;
 
 function Initialiser()
 {
-	document.getElementById("btnFacile").addEventListener("click", GenererJeu(1));
-	document.getElementById("btnMoyen").addEventListener("click", GenererJeu(2));
-	document.getElementById("btnDifficile").addEventListener("click", GenererJeu(3));
+	document.getElementById("btnFacile").addEventListener("click", GenererJeu);
+	document.getElementById("btnMoyen").addEventListener("click", GenererJeu);
+	document.getElementById("btnDifficile").addEventListener("click", GenererJeu);
 	var lesImages = document.getElementsByClassName("image");
 	for (var cpt=0; cpt<lesImages.length; cpt++)
 	{
@@ -40,20 +40,20 @@ function CreerLien()
 	}
 }
 
-function GenererJeu(dif)
+function GenererJeu()
 {
 	//ajoutez le code pour déterminer le niveau ici
 
-	if(dif==1)
+	if(this.id == "btnFacile")
 	{
 		nombreImages = 5;
 
 	}
-	else if(dif==2)
+	else if(this.id == "btnMoyen")
 	{
 		nombreImages = 10;
 	}
-	else if(dif==3)
+	else if(this.id == "btnDifficile")
 	{
 		nombreImages = 15;
 	}

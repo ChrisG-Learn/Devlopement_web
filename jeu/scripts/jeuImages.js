@@ -40,7 +40,7 @@ function CreerLien()
 	}
 }
 
-function GenererJeu()
+function GenererJeu() //Fini
 {
 	//ajoutez le code pour déterminer le niveau ici
 
@@ -151,10 +151,7 @@ function VerifierToutesTrouvees()
 	var imagesRestantes = 0;
 
     for (var count = 0; count < LesImages.length; count++) {
-		if ()
-		{
 
-        }
     }
 
 
@@ -167,24 +164,24 @@ function VerifierToutesTrouvees()
 
 }
 	
-function DisparaitreNiveaux()
+function DisparaitreNiveaux() //Fini
 {
 	document.getElementById("btnFacile").style.display = "none";
 	document.getElementById("btnMoyen").style.display = "none";
 	document.getElementById("btnDifficile").style.display = "none";
 }
-function ApparaitreNiveaux()
+function ApparaitreNiveaux() //Fini
 {
 	document.getElementById("btnFacile").style.display = "block";
 	document.getElementById("btnMoyen").style.display = "block";
 	document.getElementById("btnDifficile").style.display = "block";
 }
-function DebuterChronometre()
+function DebuterChronometre() //Fini
 {
 	secondes = 0;
 	timer = setInterval(AfficherChronometre,1000);
 }
-function AfficherChronometre()
+function AfficherChronometre() //Fini
 {
 	secondes++;
 	document.querySelector("#chrono span").innerHTML = secondes;

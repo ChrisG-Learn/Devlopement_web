@@ -104,7 +104,7 @@ function GenererLesImages()
 	    nbrImageSup = 10;
 		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
-			hasard = Math.floor((Math.random() * 10) + 1);
+			hasard = Math.floor((Math.random() * 5) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
@@ -116,7 +116,7 @@ function GenererLesImages()
         nbrImageSup = 20;
 		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
-			hasard = Math.floor((Math.random() * 20) + 1);
+			hasard = Math.floor((Math.random() * 10) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
@@ -128,7 +128,7 @@ function GenererLesImages()
 	    nbrImageSup = 30;
 		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
-			hasard = Math.floor((Math.random() * 30) + 1);
+			hasard = Math.floor((Math.random() * 15) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
@@ -139,6 +139,14 @@ function GenererLesImages()
 		lesImages[countSup].style.display = "none";
     }
 }  //Fini
+
+function ClickImage()
+{
+	if (LesImages[cpt].src == image.src)
+	{
+		LesImages[cpt].style.borderColor = "red";
+    }
+}
 
 function VerifierImage() 
 {

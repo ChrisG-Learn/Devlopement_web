@@ -142,7 +142,8 @@ function GenererLesImages()
 
 function ClickImage()
 {
-	if (LesImages[cpt].src == image.src)
+	var lesImages = document.getElementsByClassName("image");
+	if (lesImages[cpt].src == image.src)
 	{
 		LesImages[cpt].style.borderColor = "red";
     }
@@ -150,7 +151,7 @@ function ClickImage()
 
 function VerifierImage() 
 {
-
+	ClickImage();
 	VerifierToutesTrouvees();
 }
 

@@ -143,17 +143,12 @@ function GenererLesImages()
     }
 }  //Fini
 
-function ClickImage(img_click)
-{
-
-
-}
-
 function VerifierImage() 
 {
 	if (this.getAttribute("src") == image)
 	{
 		this.style.borderColor = "red";
+		imagesTrouvees++;
     }
 	VerifierToutesTrouvees();
 }

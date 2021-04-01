@@ -44,6 +44,8 @@ function GenererJeu()
 {
 	//ajoutez le code pour déterminer le niveau ici
 
+
+
 	if(this.id == "btnFacile")
 	{
 		nombreImages = 5;
@@ -64,14 +66,14 @@ function GenererJeu()
 
 
 
-	//DisparaitreNiveaux();
+	DisparaitreNiveaux();
 	GenererImageATrouver();
 	GenererLesImages();
 	DebuterChronometre();
 	VerifierToutesTrouvees();
 }
 
-function GenererImageATrouver()
+function GenererImageATrouver() //Fini
 {
 	var hasard;
 	if (nombreImages == 5)
@@ -102,6 +104,7 @@ function GenererLesImages()
 	    nbrImageSup = 10;
 		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
+			hasard = Math.floor((Math.random() * 10) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
@@ -113,6 +116,7 @@ function GenererLesImages()
         nbrImageSup = 20;
 		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
+			hasard = Math.floor((Math.random() * 20) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
@@ -124,6 +128,7 @@ function GenererLesImages()
 	    nbrImageSup = 30;
 		for (var countImage = 0; countImage < nbrImageSup; countImage++)
 		{
+			hasard = Math.floor((Math.random() * 30) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
@@ -133,7 +138,7 @@ function GenererLesImages()
 	for (var countSup = nombreImages; countSup < lesImages.length; countSup++) {
 		lesImages[countSup].style.display = "none";
     }
-}
+}  //Fini
 
 function VerifierImage() 
 {
@@ -145,6 +150,12 @@ function VerifierToutesTrouvees()
 {
 	var imagesRestantes = 0;
 
+    for (var count = 0; count < LesImages.length; count++) {
+		if ()
+		{
+
+        }
+    }
 
 
 	if (imagesRestantes == 0)

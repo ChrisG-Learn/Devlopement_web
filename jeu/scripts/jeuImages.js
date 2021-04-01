@@ -1,6 +1,9 @@
 
 window.onload = Initialiser;
 
+// var lesImages = document.getElementsByClassName("image");
+var cpt;
+var image;
 //nombre d'images différentes à utiliser dans le jeu 
 var nombreImages = 0;
 //nombre d'image trouvées pendant le tour
@@ -17,7 +20,7 @@ function Initialiser()
 	document.getElementById("btnMoyen").addEventListener("click", GenererJeu);
 	document.getElementById("btnDifficile").addEventListener("click", GenererJeu);
 	var lesImages = document.getElementsByClassName("image");
-	for (var cpt=0; cpt<lesImages.length; cpt++)
+	for (cpt = 0; cpt<lesImages.length; cpt++)
 	{
 		lesImages[cpt].addEventListener("click", VerifierImage);
 	}
@@ -88,7 +91,7 @@ function GenererImageATrouver() //Fini
 	{
 		hasard = Math.floor((Math.random() * 15) + 1);
 	}
-	var image = "images/emoji";
+	image = "images/emoji";
 	image = image.concat(hasard);
 	image = image.concat(".png");
 	document.getElementById("imageATrouver").src = image;
@@ -140,19 +143,18 @@ function GenererLesImages()
     }
 }  //Fini
 
-function ClickImage()
+function ClickImage(img_click)
 {
-	var lesImages = document.getElementsByClassName("image");
-	if (lesImages[cpt].src == image.src)
-	{
-		LesImages[cpt].style.borderColor = "red";
-    }
+
+
 }
 
 function VerifierImage() 
 {
-
-	ClickImage();
+	if (this.getAttribute("src") == image)
+	{
+		this.style.borderColor = "red";
+    }
 	VerifierToutesTrouvees();
 }
 
@@ -160,7 +162,7 @@ function VerifierToutesTrouvees()
 {
 	var imagesRestantes = 0;
 
-    for (var count = 0; count < LesImages.length; count++) {
+    /*for (var count = 0; count < lesImages.length; count++) {
 
     }
 
@@ -170,7 +172,7 @@ function VerifierToutesTrouvees()
 		clearInterval(timer);
 		ApparaitreNiveaux();
 		tours++;
-	}
+	}*/
 
 }
 	

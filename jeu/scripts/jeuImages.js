@@ -1,7 +1,7 @@
 
 window.onload = Initialiser;
 
-// var lesImages = document.getElementsByClassName("image");
+var lesImages = document.getElementsByClassName("image");
 var cpt;
 var image;
 //nombre d'images différentes à utiliser dans le jeu 
@@ -19,7 +19,7 @@ function Initialiser()
 	document.getElementById("btnFacile").addEventListener("click", GenererJeu);
 	document.getElementById("btnMoyen").addEventListener("click", GenererJeu);
 	document.getElementById("btnDifficile").addEventListener("click", GenererJeu);
-	var lesImages = document.getElementsByClassName("image");
+	lesImages = document.getElementsByClassName("image");
 	for (cpt = 0; cpt<lesImages.length; cpt++)
 	{
 		lesImages[cpt].addEventListener("click", VerifierImage);
@@ -157,7 +157,7 @@ function VerifierToutesTrouvees()
 {
 	var imagesRestantes = 0;
 	for (var count = 0; count < lesImages.length; count++) {
-		if (this.getAttribute.src == image && lesImages[cpt].style.borderColor == "black")
+		if (lesImages[count].getAttribute("src") == image && lesImages[count].style.borderColor == "black")
 		{
 		imagesRestantes = imagesRestantes + 1;
 		}

@@ -88,7 +88,6 @@ function GenererJeu() //Fini
 	GenererLesImages();
 	DebuterChronometre();
 	VerifierToutesTrouvees();
-    ApparaitreNiveaux()
 }
 
 function GenererImageATrouver() //Fini

@@ -48,40 +48,30 @@ function GenererJeu() //Fini
 	//ajoutez le code pour déterminer le niveau ici
 
 
+	var div = document.getElementById("infoTour");
+	var spans = div.getElementsByTagName("span");
 
 	if(this.id == "btnFacile")
 	{
 		nombreImages = 5;
-
+        spans[0].innerHTML = "Facile";
 	}
 	else if(this.id == "btnMoyen")
 	{
 		nombreImages = 10;
+		spans[0].innerHTML = "Moyen";
 	}
 	else if(this.id == "btnDifficile")
 	{
 		nombreImages = 15;
+		spans[0].innerHTML = "Difficile";
 	}
 	else
 	{
 		nombreImages = 5;
-	}
-
-	var div = document.getElementById("infoTour")
-	var spans = div.getElementsByTagName("span");
-
-	if (this.id == "btnFacile") {
-		spans[0].innerHTML = "Facile";
-	}
-	else if (this.id == "btnMoyen") {
-		spans[0].innerHTML = "Moyen";
-	}
-	else if (this.id == "btnDifficile") {
-		spans[0].innerHTML = "Difficile";
-	}
-	else {
 		spans[0].innerHTML = "Non reconue";
 	}
+
 
 	DisparaitreNiveaux();
 	GenererImageATrouver();
@@ -198,6 +188,9 @@ function Restart()
     }
     document.getElementById("imageATrouver").src = "images/envers.png";
     document.querySelector("#chrono span").innerHTML = "0";
+    var div = document.getElementById("infoTour");
+	var spans = div.getElementsByTagName("span");
+	spans[0].innerHTML = "0";
 }
 
 function DisparaitreNiveaux() //Fini

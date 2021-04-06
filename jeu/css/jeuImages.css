@@ -66,3 +66,28 @@ button {
 	border: solid 2px black;
 	margin: 25px;
 }
+
+@media only screen and (max-width: 768px)
+{
+    header
+    {
+        padding-top:10px;
+	    padding-bottom:10px;
+    }
+    h1
+    {
+        font-size: 1em;
+    }
+    h2
+    {
+        font-size: 0.5em;
+    }
+    .contenu
+    {
+	    max-width: 500px;
+    }
+    #informations
+    {
+        max-width: 250px;
+    }
+}

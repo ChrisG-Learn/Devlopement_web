@@ -73,7 +73,15 @@ function GenererJeu() //Fini
 	if (this.id == "btnFacile") {
 		spans[0].innerHTML = "Facile";
 	}
-
+	else if (this.id == "btnMoyen") {
+		spans[0].innerHTML = "Moyen";
+	}
+	else if (this.id == "btnDifficile") {
+		spans[0].innerHTML = "Difficile";
+	}
+	else {
+		spans[0].innerHTML = "Non reconue";
+	}
 
 	DisparaitreNiveaux();
 	GenererImageATrouver();

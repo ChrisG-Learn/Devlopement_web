@@ -187,10 +187,11 @@ function Restart()
         lesImages[count].style.display = "inline";
     }
     document.getElementById("imageATrouver").src = "images/envers.png";
-    document.querySelector("#chrono span").innerHTML = "0";
+	document.querySelector("#chrono span").innerHTML = "0";
+
     var div = document.getElementById("infoTour");
 	var spans = div.getElementsByTagName("span");
-	spans[0].innerHTML = "0";
+	spans[1].innerHTML = tours;
 }
 
 function DisparaitreNiveaux() //Fini

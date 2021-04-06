@@ -101,44 +101,43 @@ function GenererLesImages()
 {
 	var hasard;
     var nbrImageSup;
-	var lesImages = document.getElementsByClassName("image");
 	if (nombreImages == 5)
 	{
 	    nbrImageSup = 10;
-		for (var countImage = 0; countImage < nbrImageSup; countImage++)
+		for (var count = 0; count < 10; count++)
 		{
 			hasard = Math.floor((Math.random() * 5) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
-			lesImages[countImage].src = image1;
+			lesImages[count].src = image1;
 		}
 	}
 	else if (nombreImages == 10)
 	{
         nbrImageSup = 20;
-		for (var countImage = 0; countImage < nbrImageSup; countImage++)
+		for (var count = 0; count < 20; count++)
 		{
 			hasard = Math.floor((Math.random() * 10) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
-			lesImages[countImage].src = image1;
+			lesImages[count].src = image1;
 		}
 	}
 	else if (nombreImages == 15)
 	{
 	    nbrImageSup = 30;
-		for (var countImage = 0; countImage < nbrImageSup; countImage++)
+		for (var count = 0; count < 30; count++)
 		{
 			hasard = Math.floor((Math.random() * 15) + 1);
 			var image1 = "images/emoji";
 			image1 = image1.concat(hasard);
 			image1 = image1.concat(".png");
-			lesImages[countImage].src = image1;
+			lesImages[count].src = image1;
 		}
 	}
-	for (var countSup = nombreImages; countSup < lesImages.length; countSup++) {
+	for (var countSup = nbrImageSup; countSup < lesImages.length; countSup++) {
 		lesImages[countSup].style.display = "none";
     }
 }  //Fini

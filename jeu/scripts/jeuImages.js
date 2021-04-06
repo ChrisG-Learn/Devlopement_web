@@ -156,7 +156,7 @@ function VerifierToutesTrouvees()
 {
 	var imagesRestantes = 0;
 	for (var count = 0; count < lesImages.length; count++) {
-		if (lesImages[count].getAttribute("src") == image && lesImages[count].style.borderColor == "black")
+		if (lesImages[count].getAttribute("src") == image && lesImages[count].style.borderColor != "red")
 		{
 		imagesRestantes = imagesRestantes + 1;
 		}
@@ -165,13 +165,27 @@ function VerifierToutesTrouvees()
 
 	if (imagesRestantes == 0)
 	{
-		clearInterval(timer);
-		ApparaitreNiveaux();
-		tours++;
+		Restart();
 	}
 
 }
-	
+
+function Restart()
+{
+    clearInterval(timer);
+    ApparaitreNiveaux();
+    tours++;
+    imagesTrouvees = 0;
+    for (var count = 0; count < lesImages.length; count++)
+    {
+        lesImages[count].style.borderColor = "black";
+        lesImages[count].src = "images/envers.png";
+        lesImages[count].style.display = "inline";
+    }
+    document.getElementById("imageATrouver").src = "images/envers.png";
+    document.querySelector("#chrono span").innerHTML = "0";
+}
+
 function DisparaitreNiveaux() //Fini
 {
 	document.getElementById("btnFacile").style.display = "none";

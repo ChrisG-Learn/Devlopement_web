@@ -148,11 +148,14 @@ function GenererLesImages()
 
 function VerifierImage() 
 {
+	var div = document.getElementById("infoTour");
+	var spans = div.getElementsByTagName("span");
 	if (this.getAttribute("src") == image)
 	{
 		this.style.borderColor = "red";
 		imagesTrouvees++;
     }
+	spans[2].innerHTML = imagesTrouvees;
 	VerifierToutesTrouvees();
 }
 
@@ -193,6 +196,7 @@ function Restart()
 	var spans = div.getElementsByTagName("span");
 	spans[1].innerHTML = tours;
 	spans[0].innerHTML = "0";
+	spans[2].innerHTML = imagesTrouvees;
 }
 
 function DisparaitreNiveaux() //Fini

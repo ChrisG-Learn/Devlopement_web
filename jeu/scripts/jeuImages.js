@@ -192,6 +192,7 @@ function Restart()
     var div = document.getElementById("infoTour");
 	var spans = div.getElementsByTagName("span");
 	spans[1].innerHTML = tours;
+	spans[0].innerHTML = "0";
 }
 
 function DisparaitreNiveaux() //Fini

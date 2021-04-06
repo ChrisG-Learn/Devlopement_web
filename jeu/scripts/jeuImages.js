@@ -67,6 +67,12 @@ function GenererJeu() //Fini
 		nombreImages = 5;
 	}
 
+	var div = document.getElementById("infoTour")
+	var spans = div.getElementsByTagName("span");
+
+	if (this.id == "btnFacile") {
+		spans[0].innerHTML = "Facile";
+	}
 
 
 	DisparaitreNiveaux();
@@ -74,6 +80,7 @@ function GenererJeu() //Fini
 	GenererLesImages();
 	DebuterChronometre();
 	VerifierToutesTrouvees();
+    ApparaitreNiveaux()
 }
 
 function GenererImageATrouver() //Fini
@@ -197,6 +204,7 @@ function ApparaitreNiveaux() //Fini
 	document.getElementById("btnFacile").style.display = "block";
 	document.getElementById("btnMoyen").style.display = "block";
 	document.getElementById("btnDifficile").style.display = "block";
+
 }
 function DebuterChronometre() //Fini
 {
@@ -207,4 +215,7 @@ function AfficherChronometre() //Fini
 {
 	secondes++;
 	document.querySelector("#chrono span").innerHTML = secondes;
+}
+{
+	
 }

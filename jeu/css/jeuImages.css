@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 * {
 	box-sizing: border-box;
@@ -90,4 +90,13 @@ button {
     {
         max-width: 250px;
     }
+}
+@media only screen and (max-width: 600px) {
+	#informations p span {
+		display: none;
+	}
+
+	.contenu {
+		max-width: 600px;
+	}
 }

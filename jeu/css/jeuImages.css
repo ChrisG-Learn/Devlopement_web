@@ -92,11 +92,11 @@ button {
     }
 }
 @media only screen and (max-width: 600px) {
-	#informations p span {
+	#informations{
 		display: none;
 	}
 
 	.contenu {
-		max-width: 600px;
+		max-width: 300px;
 	}
 }
